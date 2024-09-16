@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>
+            La web de Jose Vicente
+        </title>
+        <meta charset="utf-8">
+        <style>
+            @font-face {
+              font-family: titulo;
+              src: url(fuentes/titulo.otf);
+            }
+            @font-face {
+              font-family: parrafo;
+              src: url(fuentes/parrafo.ttf);
+            }
+            body{
+                color:indigo;
+                background:Snow;
+                font-family:parrafo,sans-serif;
+            }
+            header,main,footer{
+                width:800px;
+                margin:auto;
+            }
+            #inicio img{
+                width:100%;
+            }
+            header{
+                text-align:center;
+            }
+            section{
+                text-align:justify;
+            }
+            h1{
+                font-family:titulo,sans-serif;
+                font-size:64px;
+                font-weight:normal;
+                margin:0px;
+                padding:0px;
+            }
+            h2{
+                font-size:12px;
+                font-style:italic;
+            }
+            nav ul{
+                list-style-type:none;
+                padding:0px;
+            }
+            nav ul li{
+                display:inline-block;
+                padding:10px;
+            }
+            nav ul li a{
+                text-decoration:none;
+                color:inherit;
+                text-transform:uppercase;
+            }
+            section h3{
+                text-align:center;
+            }
+            section img{
+                border-radius:10px;
+            }
+            .flex2{  
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                column-gap:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>
+                La web de Jose Vicente
+            </h1>
+            <h2>
+                Programador, diseñador y formador
+            </h2>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#inicio">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#sobremi">
+                            Sobre mi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#cursos">
+                            Cursos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#blog">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contacto">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="inicio">
+                <h3>Inicio</h3>
+                <img src="imagenes/pancarta.jpg" alt="Pancarta">
+            </section>
+            <section id="sobremi">
+                <h3>Sobre mi</h3>
+                <div class="flex2">
+                    <img src="imagenes/josevicentecarratala.jpg" alt="Jose Vicente Carratalá">
+                    <p>Experto en programación y gráficos 3d. Profesor en formación tanto presencial como online. CEO y Fundador en JOCARSA. Desarrollo de Proyectos de Robótica, Infografía CGI, Visualización 3D Interactiva en Realidad Virtual operando el estado del arte de la tecnología.</p>
+                </div>
+            </section>
+            <section id="cursos">
+                <h3>Cursos</h3>
+                <p>A continuación te indico un listado de mis próximos cursos</p>
+                <table border=1 width=100%>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Curso</th>
+                            <th>Duración</th>
+                            <th>Lugar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024-09-15</td>
+                            <td>Curso de HTML</td>
+                            <td>25h</td>
+                            <td>Centro 1</td>
+                        </tr>
+                        <tr>
+                            <td>2024-09-25</td>
+                            <td>Curso de PHP</td>
+                            <td>25h</td>
+                            <td>Centro 1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="blog">
+                <h3>Blog</h3>
+            </section>
+            <section id="contacto">
+                <h3>Contacto</h3>
+            </section>
+        </main>
+        <footer>
+        
+        </footer>
+    </body>
+</html>
