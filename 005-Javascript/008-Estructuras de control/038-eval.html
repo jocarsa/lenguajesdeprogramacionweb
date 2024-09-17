@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <input type="number" id="operando1">
+        <input type="number" id="operando2">
+        <select id="operacion">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <button id="calcula">Calcula</button>
+        <div id="resultado"></div>
+        <script>
+            document.querySelector("button").onclick = function(){
+                var numero1 = document.querySelector("#operando1").value*1;
+                var numero2 = document.querySelector("#operando2").value*1;
+                var operacion = document.querySelector("#operacion").value
+                var resultado = eval(numero1+operacion+numero2);
+                
+                document.querySelector("#resultado").innerHTML = resultado;
+            }
+        </script>
+    </body>
+</html>
