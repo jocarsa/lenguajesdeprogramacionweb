@@ -6,6 +6,9 @@
     <body>
         <script>
             fetch("articulos.json")
+            .then(function(response){
+                return response.json()
+            })
         </script>
     </body>
 </html>
